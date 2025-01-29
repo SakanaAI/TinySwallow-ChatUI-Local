@@ -1,0 +1,18 @@
+[project]
+name = "tinyswallow-chatui-local"
+version = "0.1.0"
+description = "Python-based chat demo for TinySwallow-1.5B that works completely offline"
+readme = "README.md"
+authors = [
+    { name = "Makoto Shing", email = "mkshing@sakana.ai" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gradio",
+    "mlc-llm-nightly-cpu",
+    "mlc-ai-nightly-cpu",
+]
+
+[tool.uv]
+find-links = ["https://mlc.ai/wheels"]
+prerelease = "allow"
